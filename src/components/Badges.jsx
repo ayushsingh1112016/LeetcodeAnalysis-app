@@ -40,7 +40,7 @@ const Badges = ({ username }) => {
           &lt;
         </button>
         <div className="flex flex-col items-center">
-          <img src={badges[currentBadgeIndex].icon} alt={badges[currentBadgeIndex].displayName} className="w-12 h-12" />
+          <img src={badges[currentBadgeIndex].icon} alt={badges[currentBadgeIndex].displayName} className="w-13" />
           <p className="mt-2">{badges[currentBadgeIndex].displayName}</p>
         </div>
         <button onClick={handleNext} className="text-gray-500 bg-white rounded-full p-2 hover:bg-white">

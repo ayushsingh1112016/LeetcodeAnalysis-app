@@ -1,0 +1,33 @@
+/* Test.css */
+.calendar-heatmap {
+    position: relative;
+  }
+  
+  .tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000;
+    pointer-events: none; /* Prevent tooltip from blocking mouse events */
+  }
+  
+  .calendar-heatmap .react-calendar-heatmap .calendar-heatmap__cell {
+    border-right: 1px solid #e0e0e0; /* Add a right border to create a gap */
+  }
+  
+  .calendar-heatmap .react-calendar-heatmap .calendar-heatmap__cell:nth-child(7n) {
+    border-right: none; /* Remove border for the last cell in each week */
+  }
+  
+  .calendar-heatmap .react-calendar-heatmap .calendar-heatmap__cell:nth-child(30n) {
+    border-bottom: 1px solid #e0e0e0; /* Add a bottom border to create a gap between months */
+  }
+  
+  .calendar-heatmap .react-calendar-heatmap .calendar-heatmap__cell:nth-child(30n+1) {
+    border-bottom: none; /* Remove border for the last cell in each month */
+  }
+  

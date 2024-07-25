@@ -8,6 +8,8 @@ import 'tailwindcss/tailwind.css';
 import Heatmap from "./Heatmap";
 import Test from "./Test";
 import QuestionList from "./QuestionList";
+import SolveMore from "./SolveMore";
+import ProblemList from "./ProblemList";
 
 const Home = () => {
   const { username } = useParams();
@@ -27,8 +29,11 @@ const Home = () => {
           </div>
       </div>
       <div className="flex px-5">
-        <Contests className= "w-1/2"username={username} />
-        <QuestionList/>  
+        <div className="w-auto flex flex-col p-4">
+          <Contests className= "w-1/2"username={username} />
+          <SolveMore username={username}/>
+        </div>
+        <QuestionList/>
       </div>
       <div className="flex justify-center">
         <div className="w-10/12">
@@ -37,6 +42,8 @@ const Home = () => {
       </div>
       
     </div>
+    // <ProblemList/>
+    
   );
 };
 

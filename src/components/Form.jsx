@@ -13,9 +13,10 @@ const Form = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center flex-col items-center h-screen">
+      <h1 className='text-center text-3xl mb-10 font-extrabold p-5'>LeetCodeAnalysis.io</h1>
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md">
-        <h2 className="text-2xl mb-4 text-center">Enter Username</h2>
+        <h2 className="text-2xl mb-4 text-center">Enter Leetcode Username</h2>
         <input
           type="text"
           value={username}

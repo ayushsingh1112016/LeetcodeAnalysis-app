@@ -100,7 +100,7 @@ const Heatmap = ({ username }) => {
           ))}
         </select>
       </div>
-      <div className="relative">
+      <div className="relative pt-5">
         <div className="w-full h-fit py-5"> {/* Adjust the height as needed */}
           <CalendarHeatmap
             startDate={new Date(`${selectedYear}-01-01`)}

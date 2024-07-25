@@ -1,0 +1,17 @@
+/* ProblemList.css */
+
+.table-container {
+    overflow-x: auto; /* This allows horizontal scrolling for the table container */
+  }
+  
+  .table {
+    width: 100%; /* Ensure the table takes full width */
+  }
+  
+  @media (max-width: 768px) {
+    /* For mobile devices */
+    .table-container {
+      overflow-x: auto;
+    }
+  }
+  

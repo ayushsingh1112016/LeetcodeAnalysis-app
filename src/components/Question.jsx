@@ -64,11 +64,11 @@ const Question = ({ username }) => {
   };
 
   return (
-    <div className='h-fit'>
-      <h2>LeetCode Questions Solved</h2>
-      <Pie data={chartData} options={options} />
-      <h1>Total Problems: {totalQ} </h1>
-    </div>
+    <div className='h-fit lg:w-50'>
+    <h2>LeetCode Questions Solved</h2>
+    <Pie data={chartData} options={options} />
+    <h1 className='text-center'>Total Problems: {totalQ} </h1>
+  </div>
   );
 };
 
